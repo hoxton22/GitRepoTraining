@@ -1,0 +1,12 @@
+Une fois qu'on a tout les commits local pres :
+
+1) git log --pretty=oneline et récupérer le commit juste avant le premier qu'on veut modif par ordre chronologique
+2) git rebase --interactive [commit-hash]
+3) dans l'editeur de texte : remplacer SAUF POUR LE PREMIER COMMIT les "pick" par des "s", puis enregistrer et quitter
+4) un editeur de texte va s'ouvrir a nouveau, supprimer toutes les lignes sauf une => ça sera le nom du commit global, puis enreg et quit
+5) git push
+
+
+
+# Tuto : https://www.internalpointers.com/post/squash-commits-into-one-git
+# Log propre https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
